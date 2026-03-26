@@ -55,10 +55,13 @@ export const useNotificationSocket = (
         { queryKey: ["notifications"], exact: false },
         (old) => (old ? { ...old, unreadCount: payload.unreadCount } : old),
       );
-      queryClient.setQueryData<number>(["notifications", "unreadCount"], payload.unreadCount);
+      queryClient.setQueryData<number>(
+        ["notifications", "unreadCount"],
+        payload.unreadCount,
+      );
 
       const msg = toastMessages[payload.type] ?? "New notification";
-      toast.info(msg);
+      // toast.info(msg);
     };
 
     socket.on("connect", handleConnect);
@@ -80,4 +83,3 @@ export const useNotificationSocket = (
     };
   }, [enabled, queryClient, userId]);
 };
-
