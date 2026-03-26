@@ -37,7 +37,7 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
 
   if (res.status === 401) {
     try {
-      const refreshRes = await fetch(`${BASE_URL}/auth/refresh`, {
+      const refreshRes = await fetch(`${process.env.BASE_URL}/auth/refresh`, {
         method: "GET",
         credentials: "include",
       });
