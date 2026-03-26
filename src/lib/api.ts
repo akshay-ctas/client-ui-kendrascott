@@ -5,8 +5,6 @@ type FetchOptions = {
   token?: string;
 };
 
-const BASE_URL = "http://localhost:5000/api";
-
 export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
   const { method = "GET", body, headers = {}, token: serverToken } = options;
 
@@ -23,7 +21,7 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
   const isFormData = body instanceof FormData;
 
   const request = async (accessToken?: string | null) => {
-    return fetch(`${BASE_URL}${endpoint}`, {
+    return fetch(`${process.env.BASE_URL}${endpoint}`, {
       method,
       headers: {
         ...(isFormData ? {} : { "Content-Type": "application/json" }),

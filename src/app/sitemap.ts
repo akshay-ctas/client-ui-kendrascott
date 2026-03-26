@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getProducts } from "./actions/order.server";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const SITE_URL = process.env.REACT_APP_SERVER_URL || "http://localhost:3000";
 
 async function getProduct() {
   try {

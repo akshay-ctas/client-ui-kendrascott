@@ -1,8 +1,5 @@
 import { io, Socket } from "socket.io-client";
-import {
-  NotificationSocketPayload,
-  RecipientType,
-} from "@/types/notification";
+import { NotificationSocketPayload, RecipientType } from "@/types/notification";
 
 interface ServerToClientEvents {
   "notification:new": (payload: NotificationSocketPayload) => void;
@@ -20,7 +17,7 @@ export const getSocket = (): Socket<
 > => {
   if (!socket) {
     const socketUrl =
-      process.env.NEXT_PUBLIC_SOCKET_URL ?? "http://localhost:5000";
+      process.env.REACT_APP_SERVER_URL ?? "http://localhost:5000";
 
     socket = io(socketUrl, {
       withCredentials: true,
@@ -31,4 +28,3 @@ export const getSocket = (): Socket<
 
   return socket;
 };
-

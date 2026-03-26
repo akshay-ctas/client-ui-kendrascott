@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  process.env.REACT_APP_SERVER_URL || "http://localhost:3000";
 
 const SITE_NAME = "Kendra Scott Clone";
 const DEFAULT_DESCRIPTION =
