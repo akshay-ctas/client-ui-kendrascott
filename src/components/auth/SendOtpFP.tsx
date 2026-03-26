@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import { Input } from "../ui/input";
 import { sendOtpForForgotPassword } from "@/services/auth.service";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
+import { Input } from "../ui/Input";
 
 export default function SendOtpFp() {
   const emailRef = useRef<HTMLInputElement>(null);
