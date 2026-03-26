@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+
+
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/products</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/necklaces</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/bracelets</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/earrings</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/rings</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/watches</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/necklaces/pendant-necklaces</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/necklaces/choker-necklaces</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/earrings/stud-earrings</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+<url>
+  <loc>https://client-ui-kendrascott.vercel.app/jewelry/rings/engagement-rings</loc>
+  <lastmod>2026-03-26T13:03:30+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/silver-velvet-choker</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/turquoise-beaded-bracelet</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/garnet-stud-earrings</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/silver-chain-choker</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/minimalist-gold-chain-necklace</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/hoop-earrings-gold</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/pearl-drop-earrings</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/chandelier-drop-earrings</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/gold-pendant-necklace</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/opal-pendant-necklace</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/vintage-gold-locket-necklace</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/gold-charm-bracelet</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/gold-bangle-set</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/diamond-choker-necklace</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/gold-cuban-link-bracelet</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/leather-strap-watch-rose-gold</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/diamond-stud-earrings</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/solitaire-sapphire-ring</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/sapphire-tennis-bracelet</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/smart-fitness-watch</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/ruby-pendant-necklace</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/aquamarine-engagement-ring</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/mens-stainless-steel-watch</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/ladies-rose-gold-watch</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/platinum-diamond-wedding-band</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/product/luxury-swiss-chronograph-watch</loc>
+<lastmod>2024-01-15T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://server-t6sk.onrender.com/undefined</loc>
+<lastmod>2026-03-26T13:04:52.262Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
+
+</urlset>

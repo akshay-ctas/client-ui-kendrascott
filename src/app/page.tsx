@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import HeroVideo from "@/components/hero/HeroVideo";
+import { getCategorie } from "./sitemap";
 
 const HeroCategory = dynamic(() => import("@/components/hero/HeroCategory"), {
   ssr: true,
@@ -18,7 +19,11 @@ const PersonalizedSection = dynamic(
   { ssr: true },
 );
 
-export default function HomePage() {
+export default async function HomePage() {
+  const products = await getCategorie();
+
+  console.log("cat", products);
+
   return (
     <main className="flex flex-col">
       <HeroVideo />

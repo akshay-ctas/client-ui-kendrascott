@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getProducts } from "./actions/order.server";
+import { getCategories, getProducts } from "./actions/order.server";
 
 const SITE_URL = process.env.REACT_APP_SERVER_URL || "http://localhost:3000";
 
@@ -11,6 +11,11 @@ async function getProduct() {
   } catch (error) {
     return [];
   }
+}
+
+export async function getCategorie() {
+  const categories = await getCategories();
+  return categories.map((cat: any) => ({ category: cat.slug }));
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -46,5 +51,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...productRoutes];
+  const categories = await getCategorie();
+
+  const categoriesRoutes: MetadataRoute.Sitemap = categories.map(
+    (cat: any) => ({
+      url: `${baseUrl}/${cat.url}`,
+      lastModified: new Date(cat.updatedAt || Date.now()),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }),
+  );
+
+  return [...staticRoutes, ...productRoutes, ...categoriesRoutes];
 }
