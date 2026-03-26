@@ -21,7 +21,7 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
   const isFormData = body instanceof FormData;
 
   const request = async (accessToken?: string | null) => {
-    return fetch(`${process.env.BASE_URL}${endpoint}`, {
+    return fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}${endpoint}`, {
       method,
       headers: {
         ...(isFormData ? {} : { "Content-Type": "application/json" }),
@@ -37,10 +37,13 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
 
   if (res.status === 401) {
     try {
-      const refreshRes = await fetch(`${process.env.BASE_URL}/auth/refresh`, {
-        method: "GET",
-        credentials: "include",
-      });
+      const refreshRes = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/refresh`,
+        {
+          method: "GET",
+          credentials: "include",
+        },
+      );
 
       const refreshData = await refreshRes.json();
       const newToken =
