@@ -19,6 +19,7 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
   }
 
   const isFormData = body instanceof FormData;
+  const isRefreshCall = endpoint === "/auth/refresh";
 
   const request = async (accessToken?: string | null) => {
     return fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}${endpoint}`, {
@@ -35,7 +36,7 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
 
   let res = await request(token);
 
-  if (res.status === 401) {
+  if (res.status === 401 && !isRefreshCall) {
     try {
       const refreshRes = await fetch(
         `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/refresh`,
@@ -45,11 +46,15 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
         },
       );
 
+      if (!refreshRes.ok) {
+        throw new Error("Refresh request failed");
+      }
+
       const refreshData = await refreshRes.json();
       const newToken =
         refreshData?.data?.accessToken || refreshData?.accessToken;
 
-      if (!newToken) throw new Error("Refresh token failed");
+      if (!newToken) throw new Error("No new access token");
 
       if (typeof window !== "undefined") {
         sessionStorage.setItem("accessToken", JSON.stringify(newToken));
@@ -59,7 +64,6 @@ export async function apiFetch(endpoint: string, options: FetchOptions = {}) {
     } catch {
       if (typeof window !== "undefined") {
         sessionStorage.clear();
-        window.location.href = "/login";
       }
       throw new Error("Session expired");
     }
