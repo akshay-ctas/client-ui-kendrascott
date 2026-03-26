@@ -29,8 +29,16 @@ export type CheckoutData = {
 };
 
 export async function getCategories() {
-  const res = await apiFetch("/categories/tree", {
+  const res = await fetch(`${process.env.BASE_URL}/categories/tree`, {
     method: "GET",
+    cache: "no-store",
   });
-  return res.data;
+
+  if (!res.ok) {
+    throw new Error(`Failed to fetch categories: ${res.status}`);
+  }
+
+  const result = await res.json();
+
+  return result?.data || [];
 }
