@@ -89,14 +89,14 @@ export default function AddressesContent() {
       {showForm && user && accessToken && (
         <AddAddressForm
           token={accessToken}
-          userId={user._id}
+          userId={user.id}
           onClose={() => setShowForm(false)}
         />
       )}
       {showEditForm && user && accessToken && editUserData && (
         <AddAddressForm
           token={accessToken}
-          userId={user._id}
+          userId={user.id}
           onClose={() => {
             setShowEditForm(false);
             setEditUserData(null);

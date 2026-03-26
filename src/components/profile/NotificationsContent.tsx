@@ -38,7 +38,7 @@ export default function NotificationsContent() {
   const queryClient = useQueryClient();
   const { user } = useAuth();
 
-  useNotificationSocket(user?._id, true);
+  useNotificationSocket(user?.id, true);
 
   const { data, isLoading } = useQuery<NotificationsResponse>({
     queryKey: ["notifications", activeTab, readFilter],

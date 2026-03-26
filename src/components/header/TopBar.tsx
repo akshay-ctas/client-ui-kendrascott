@@ -15,8 +15,8 @@ const topBarLinks = [
 
 export default function TopBar() {
   const { user } = useAuth();
-  useNotificationSocket(user?._id, Boolean(user?._id));
-  const unreadCount = useUnreadNotificationsCount(Boolean(user?._id));
+  useNotificationSocket(user?.id, Boolean(user?.id));
+  const unreadCount = useUnreadNotificationsCount(Boolean(user?.id));
 
   return (
     <div className="py-2" style={{ backgroundColor: "var(--brand-yellow)" }}>
