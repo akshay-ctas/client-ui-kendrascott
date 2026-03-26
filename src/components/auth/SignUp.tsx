@@ -79,8 +79,8 @@ export default function SignUp() {
       toast("Registration Complete!", {
         description: `Check ${res.data.email} for your verification code to continue.`,
       });
+      router.push(`/auth/send-to-email?email=${res.data.email}`);
       if (res.status === "success" && res.data) {
-        router.push(`/auth/send-to-email?email=${res.data.email}`);
         await sendOtpEmailVerify({ email: res.data.email });
       }
     } catch (error: unknown) {
