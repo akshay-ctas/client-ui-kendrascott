@@ -80,10 +80,9 @@ export default function SignUp() {
         description: `Check ${res.data.email} for your verification code to continue.`,
       });
       if (res.status === "success" && res.data) {
-        await sendOtpEmailVerify({ email: res.data.email });
         router.push(`/auth/send-to-email?email=${res.data.email}`);
+        await sendOtpEmailVerify({ email: res.data.email });
       }
-      router.push(`/auth/send-to-email?email=${formData.email}`);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : String(error);
       toast(message);
