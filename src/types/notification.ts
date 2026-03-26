@@ -42,4 +42,3 @@ export type NotificationSocketPayload = {
   unreadCount: number;
   notification: NotificationItem;
 };
-

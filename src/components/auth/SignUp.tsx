@@ -83,6 +83,7 @@ export default function SignUp() {
         await sendOtpEmailVerify({ email: res.data.email });
         router.push(`/auth/send-to-email?email=${res.data.email}`);
       }
+      router.push(`/auth/send-to-email?email=${formData.email}`);
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : String(error);
       toast(message);
