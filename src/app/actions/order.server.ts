@@ -1,5 +1,6 @@
 "use server";
 
+import { apiFetch } from "@/lib/api";
 import { serverApiFetch } from "@/lib/serverApi";
 
 export async function getOrderById(orderId: string) {
@@ -26,3 +27,10 @@ export type CheckoutData = {
   paymentMethod: string;
   cart: CheckoutCartItem[];
 };
+
+export async function getCategories() {
+  const res = await apiFetch("/categories/tree", {
+    method: "GET",
+  });
+  return res.data;
+}

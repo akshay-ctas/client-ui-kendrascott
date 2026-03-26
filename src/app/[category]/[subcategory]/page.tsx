@@ -1,8 +1,8 @@
-import { getCategories } from "@/services/category.service";
 import { Container } from "@/components/ui/Container";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Product } from "@/components/product/Product";
+import { getCategories } from "@/app/actions/order.server";
 
 interface Props {
   params: Promise<{ category: string; subcategory: string }>;
